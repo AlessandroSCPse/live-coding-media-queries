@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop first */
+body {
+    background-color: crimson;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        background-color: green;
+    }
+}

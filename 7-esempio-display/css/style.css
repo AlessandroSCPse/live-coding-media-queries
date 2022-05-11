@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile first */
+.box {
+    height: 300px;
+    background-color: blue;
+    border: 20px solid white;
+}
+.green {
+    height: 100%;
+    background-color: green;
+    width: 50%;
+    display: none;
+}
+
+@media screen and (min-width: 580px) {
+    .green {
+        display: block;
+    }
+}

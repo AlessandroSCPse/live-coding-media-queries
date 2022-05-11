@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile first */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+}
+
+@media all and (min-width: 479px) {
+    .box-container {
+        display: flex;
+    }
+    .box {
+        background-color: crimson;
+    }
+    .box:first-child {
+        margin-right: 2px;
+    }
+    .box:nth-child(2) {
+        margin-left: 2px;
+    }
+}

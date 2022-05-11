@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop first */
+img {
+    width: 200px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 7px;
+}
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+    .images-container {
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .images-container {
+        flex-direction: column;
+    }
+}
